@@ -1,4 +1,4 @@
-WEAPON = False
+weapon = False
 
 
 def starting_room():
@@ -69,10 +69,20 @@ def room_two():
             print("\nZombie-like creatures start emerging from the side walls")
             print("As you enter the long hall. You are killed.")
             print("Rip " + name + "")
-            quit()
+            print("Play Again, Y or N?")
+            user_input = input()
+            if user_input == "y":
+                starting_room()
+            else:
+                quit()
         elif user_input == "left":
-            print("Congratulations " + name + "! You made it out!")
-            quit()
+            print("\nCongratulations " + name + "! You made it out!")
+            print("Play Again, Y or N?")
+            user_input = input()
+            if user_input == "y":
+                starting_room()
+            else:
+                quit()
         elif user_input == "backward":
             starting_room()
         else:
@@ -96,11 +106,21 @@ def room_three():
         user_input = input()
         if user_input == "forward":
             print("\nCongratulations " + name + "! You made it out!")
-            quit()
+            print("Play Again, Y or N?")
+            user_input = input()
+            if user_input == "y":
+                starting_room()
+            else:
+                quit()
         elif user_input == "backward":
             print("\nYou ran straight into whatever made those sounds before!")
             print("Rip " + name + "!")
-            quit()
+            print("Play Again, Y or N?")
+            user_input = input()
+            if user_input == "y":
+                starting_room()
+            else:
+                quit()
         else:
             print("\nPlease enter a valid option.")
 
@@ -146,9 +166,20 @@ def undead_monster():
                 print("\nYou kill the zombie with the gun you found earlier.")
                 print("\nAfter moving forward, you find one of the exits.")
                 print("Congrats " + name + "!")
+                print("Play Again, Y or N?")
+                user_input = input()
+                if user_input == "y":
+                    starting_room()
+                else:
+                    quit()
             else:
                 print("\nThe zombie-like creature has killed you!")
-            quit()
+                print("Play Again, Y or N?")
+                user_input = input()
+                if user_input == "y":
+                    starting_room()
+                else:
+                    quit()
         elif user_input == "flee":
             room_four()
         else:
