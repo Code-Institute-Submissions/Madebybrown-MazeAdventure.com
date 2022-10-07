@@ -1,7 +1,5 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-weapon = False
+WEAPON = False
+
 
 def starting_room():
     """
@@ -10,18 +8,18 @@ def starting_room():
     """
     directions = ["left", "right", "forward"]
     print("\nYou find yourself in the middle of a room, there are four paths to chose from, where would you like to go?")
-    userInput = ""
+    user_input = ""
     
-    while userInput not in directions:
+    while user_input not in directions:
         print("Options: left | right | backward | forward")
-        userInput = input()
-        if userInput == "left":
+        user_input = input()
+        if user_input == "left":
             roomOne()
-        elif userInput == "right":
+        elif user_input == "right":
             roomFour()
-        elif userInput == "backward":
+        elif user_input == "backward":
             print("\nYou find that this way is blocked by heavy rocks, you have to turn around and take another way.")
-        elif userInput == "forward":
+        elif user_input == "forward":
             roomTwo()
         else:
             print("\nPlease enter a valid option.")
