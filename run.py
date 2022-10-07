@@ -3,7 +3,7 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 weapon = False
 
-def startingRoom():
+def starting_room():
     """
     Creates a loop that repeats to print the options if the users 
     input is not in directions. (Example - backward)
@@ -27,7 +27,7 @@ def startingRoom():
             print("\nPlease enter a valid option.")
 
 
-def roomOne():
+def room_one():
     """
     Creates a loop that repeats to print the options if the users 
     input is not in directions. (Example - forward)
@@ -49,7 +49,7 @@ def roomOne():
             print("\nPlease enter a valid option.")
 
 
-def roomTwo():
+def room_two():
     """
     Creates a loop that repeats to print the options if the users 
     input is not in directions. (Example - forward)
@@ -73,7 +73,7 @@ def roomTwo():
             print("\nPlease enter a valid option.")
 
 
-def roomThree():
+def room_three():
     """
     Creates a loop that repeats to print the options if the users 
     input is not in directions. (Example - forward)
@@ -95,7 +95,7 @@ def roomThree():
             print("\nPlease enter a valid option.")
 
 
-def roomFour():
+def room_four():
     """
     Creates a loop that repeats to print the options if the users 
     input is not in directions. (Example - left(Hidden weapon))
@@ -117,7 +117,7 @@ def roomFour():
             undeadMonster()
 
 
-def undeadMonster():
+def undead_monster():
     actions = ["fight","flee"]
     global weapon
     print("\nA strange zombie-like monster has appeared. You can either run or fight it. What would you like to do?")
