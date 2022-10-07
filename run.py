@@ -34,14 +34,14 @@ def roomOne():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
-    print("\nYou're walking down the tunnel when \nyou suddenly hear a noise echo through the distant tunnels infront of you, where should you go?")
+    print("\nYou're walking down the tunnel when \nYou suddenly hear a noise echo through the distant tunnels infront of you \nwhere should you go?")
     userInput = ""
     
     while userInput not in directions:
         print("Options: left | right | backward")
         userInput = input()
         if userInput == "left":
-            print("\nYou find that this way is blocked by heavy rocks, you have to turn around and take another way.")
+            print("\nYou find that this way is blocked by heavy rocks \nYou have to turn around and take another way.")
         elif userInput == "right":
             roomThree()
         elif userInput == "backward":
@@ -56,7 +56,7 @@ def roomTwo():
     input is not in directions. (Example - forward)
     """
     directions = ["left","right","backward"]
-    print("You hear strange noises. You think you have disturbed some ancient spirit. Where would you like to go?")
+    print("\nYou hear strange noises. You think you have disturbed some ancient spirit. Where would you like to go?")
     userInput = ""
 
     while userInput not in directions:
