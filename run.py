@@ -1,6 +1,7 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+weapon = False
 
 def startingRoom():
     """
@@ -17,10 +18,10 @@ def startingRoom():
         if userInput == "left":
             roomOne()
         elif userInput == "right":
-            print("You walk into a dark hall, and can't see the where to put your feet, you fall into a pit and die.")
+            print("\nYou walk into a dark hall, and can't see the where to put your feet, you fall into a pit and die.")
             quit()
         elif userInput == "backward":
-            print("You find that this way is blocked by heavy rocks, you have to turn around and take another way.")
+            print("\nYou find that this way is blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "forward":
             roomTwo()
         else:
@@ -29,7 +30,8 @@ def startingRoom():
 
 def roomOne():
     """
-    
+    Creates a loop that repeats to print the options if the users 
+    input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
     print("\nYou're walking down the tunnel when \nyou suddenly hear a noise echo through the distant tunnels infront of you, where should you go?")
@@ -50,7 +52,8 @@ def roomOne():
 
 def roomTwo():
     """
-    
+    Creates a loop that repeats to print the options if the users 
+    input is not in directions. (Example - forward)
     """
     directions = ["left","right","backward"]
     print("You hear strange noises. You think you have disturbed some ancient spirit. Where would you like to go?")
@@ -73,7 +76,8 @@ def roomTwo():
 
 def roomThree():
     """
-    
+    Creates a loop that repeats to print the options if the users 
+    input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
     print("\nYou see something on the floor, \nIt's an phone, someone must have been here recently! \n...You hear that noise again, but this time it's closer, \nWhere should you go?")
@@ -86,17 +90,10 @@ def roomThree():
             print("Congratulations! You made it out!")
             quit()
         elif userInput == "backward":
-            tunnelMonster()
+            print("\nYou ran straight into whatever made those sounds before and you died!")
+            quit()
         else:
             print("Please enter a valid option.")
-
-
-def tunnelMonster():
-    """
-    
-    """
-    print("\nYou ran straight into whatever made those sounds before and you died!")
-    quit()
 
 
 if __name__ == "__main__":
