@@ -4,7 +4,7 @@
 
 def startingRoom():
     """
-    Creates a loop that repeats the options if the users 
+    Creates a loop that repeats to print the options if the users 
     input is not in directions. (Example - backward)
     """
     directions = ["left", "right", "forward"]
@@ -13,14 +13,32 @@ def startingRoom():
     
     while userInput not in directions:
         print("Options: left | right | backward | forward")
+        userInput = input()
         if userInput == "left":
-            riddleRoomOne()
+            RoomOne()
         elif userInput == "right":
             deathRoom()
         elif userInput == "backward":
             print("You find that this way in blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "forward":
-            riddleRoomTwo()
+            RoomTwo()
+        else:
+            print("Please enter a valid option.")
+
+def roomOne():
+    directions = ["right", "backward"]
+    print("\nYou're walking down the tunnel when \nyou suddenly hear a noise echo through the distant tunnels infront of you, where should you go?")
+    userInput = ""
+    
+    while userInput not in directions:
+        print("Options: left | right | backward")
+        userInput = input()
+        if userInput == "left":
+            print("You find that this way in blocked by heavy rocks, you have to turn around and take another way.")
+        elif userInput == "right":
+            roomThree()
+        elif userInput == "backward":
+            startingRoom()
         else:
             print("Please enter a valid option.")
 
@@ -28,13 +46,11 @@ def startingRoom():
 
 # def emptyRoom():
 
-# def riddleRoomOne():
+# def RoomTwo():
 
-# def riddleRoomTwo():
+# def RoomThree():
 
-# def riddleRoomThree():
-
-# def riddleRoomFour():
+# def RoomFour():
 
 # def deadEnd():
 
