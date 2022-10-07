@@ -3,12 +3,12 @@ weapon = False
 
 def starting_room():
     """
-    Creates a loop that repeats to print the options if the users
+    Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - backward)
     """
     directions = ["left", "right", "forward"]
     print("\nYou find yourself in the middle of a room")
-    print("There are four paths to chose from")
+    print("There are four paths to choose from")
     print("Where would you like to go?")
     user_input = ""
     while user_input not in directions:
@@ -19,7 +19,7 @@ def starting_room():
         elif user_input == "right":
             room_four()
         elif user_input == "backward":
-            print("\nYou find that this way is blocked by heavy rocks")
+            print("\nYou find that heavy rocks block this way")
             print("You have to turn around and take another way.")
         elif user_input == "forward":
             room_two()
@@ -29,7 +29,7 @@ def starting_room():
 
 def room_one():
     """
-    Creates a loop that repeats to print the options if the users
+    Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
@@ -41,7 +41,7 @@ def room_one():
         print("Options: left | right | backward")
         user_input = input()
         if user_input == "left":
-            print("\nYou find that this way is blocked by heavy rocks")
+            print("\nYou find that heavy rocks block this way")
             print("You have to turn around and take another way.")
         elif user_input == "right":
             room_three()
@@ -53,7 +53,7 @@ def room_one():
 
 def room_two():
     """
-    Creates a loop that repeats to print the options if the users
+    Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - forward)
     """
     directions = ["left", "right", "backward"]
@@ -91,12 +91,12 @@ def room_two():
 
 def room_three():
     """
-    Creates a loop that repeats to print the options if the users
+    Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
     print("\nYou see something on the floor")
-    print("It's an phone, someone must have been here recently!")
+    print("It's a phone, someone must have been here recently!")
     print("...You hear that noise again, but this time it's closer")
     print("Where should you go?")
     user_input = ""
@@ -127,13 +127,13 @@ def room_three():
 
 def room_four():
     """
-    Creates a loop that repeats to print the options if the users
+    Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - left(Hidden weapon))
     """
     directions = ["backward", "forward"]
     global weapon
     print("\nYou see some old scriptures on the walls to the left")
-    print("It feel like someone is watching you, where would you go?")
+    print("It feels like someone is watching you, where would you go?")
     user_input = ""
 
     while user_input not in directions:
@@ -141,7 +141,7 @@ def room_four():
         user_input = input()
         if user_input == "left":
             print("\nYou find this way is a dead end, but wait..")
-            print("Theres something shining in the dirt...")
+            print("Something is shining in the dirt...")
             print("You found a loaded gun")
             weapon = True
         elif user_input == "backward":
@@ -194,7 +194,7 @@ if __name__ == "__main__":
         print("And you find yourself lost.")
         print("\nYou can choose to walk in multiple directions.")
         print("But beware!")
-        print("Challanges will present themselves")
+        print("Challenges will present themselves")
         print("Hope you'll find a way out!")
         print("\nWhat's your name?: ")
         name = input()
