@@ -17,7 +17,8 @@ def startingRoom():
         if userInput == "left":
             roomOne()
         elif userInput == "right":
-            deathRoom()
+            print("You walk into a dark hall, and can't see the where to put your feet, you fall into a pit and die.")
+            quit()
         elif userInput == "backward":
             print("You find that this way is blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "forward":
@@ -52,13 +53,14 @@ def roomTwo():
     
     """
     directions = ["left","right","backward"]
-    print("You hear strange noises. You think you have awoken some ancient spirit. Where would you like to go?")
+    print("You hear strange noises. You think you have disturbed some ancient spirit. Where would you like to go?")
     userInput = ""
+
     while userInput not in directions:
         print("Options: left | right | backward")
         userInput = input()
         if userInput == "right":
-            print("Multiple zombie-like creatures start emerging form the sides as you enter the long hall. You are killed.")
+            print("Zombie-like creatures start emerging from the sides as you enter the long hall. You are killed.")
             quit()
         elif userInput == "left":
             print("Congratulations! You made it out!")
