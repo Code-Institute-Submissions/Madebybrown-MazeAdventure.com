@@ -3,7 +3,7 @@ WEAPON = False
 
 def starting_room():
     """
-    Creates a loop that repeats to print the options if the users 
+    Creates a loop that repeats to print the options if the users
     input is not in directions. (Example - backward)
     """
     directions = ["left", "right", "forward"]
@@ -29,7 +29,7 @@ def starting_room():
 
 def room_one():
     """
-    Creates a loop that repeats to print the options if the users 
+    Creates a loop that repeats to print the options if the users
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
@@ -53,7 +53,7 @@ def room_one():
 
 def room_two():
     """
-    Creates a loop that repeats to print the options if the users 
+    Creates a loop that repeats to print the options if the users
     input is not in directions. (Example - forward)
     """
     directions = ["left", "right", "backward"]
@@ -81,7 +81,7 @@ def room_two():
 
 def room_three():
     """
-    Creates a loop that repeats to print the options if the users 
+    Creates a loop that repeats to print the options if the users
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
@@ -107,7 +107,7 @@ def room_three():
 
 def room_four():
     """
-    Creates a loop that repeats to print the options if the users 
+    Creates a loop that repeats to print the options if the users
     input is not in directions. (Example - left(Hidden weapon))
     """
     directions = ["backward", "forward"]
