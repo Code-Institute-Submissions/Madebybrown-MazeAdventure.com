@@ -11,7 +11,6 @@ def starting_room():
     print("There are four paths to chose from")
     print("Where would you like to go?")
     user_input = ""
-    
     while user_input not in directions:
         print("Options: left | right | backward | forward")
         user_input = input()
@@ -38,7 +37,6 @@ def room_one():
     print("You suddenly hear a noise echo through the distant tunnels")
     print("Where should you go?")
     user_input = ""
-    
     while user_input not in directions:
         print("Options: left | right | backward")
         user_input = input()
@@ -100,8 +98,8 @@ def room_three():
             print("\nCongratulations " + name + "! You made it out!")
             quit()
         elif user_input == "backward":
-            print("\nYou ran straight into whatever made those sounds before and you died!")
-            print("Rip " + name + "")
+            print("\nYou ran straight into whatever made those sounds before!")
+            print("Rip " + name + "!")
             quit()
         else:
             print("\nPlease enter a valid option.")
@@ -133,7 +131,7 @@ def room_four():
 
 
 def undead_monster():
-    actions = ["fight","flee"]
+    actions = ["fight", "flee"]
     global weapon
     print("\nA strange zombie-like monster has appeared.")
     print("You can either run or fight it.")
@@ -160,7 +158,7 @@ def undead_monster():
 if __name__ == "__main__":
     while True:
         print("Welcome to Maze Adventure!")
-        print("\nAs an adventurer you've decided to visit the maze of Himoshi.")
+        print("\nAs an adventurer you've decided to visit the maze of Himo.")
         print("But while inside you lose track of time")
         print("And you find yourself lost.")
         print("\nYou can choose to walk in multiple directions.")
