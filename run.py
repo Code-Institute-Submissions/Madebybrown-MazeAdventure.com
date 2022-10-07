@@ -21,11 +21,15 @@ def startingRoom():
         elif userInput == "backward":
             print("You find that this way is blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "forward":
-            RoomTwo()
+            roomTwo()
         else:
             print("Please enter a valid option.")
 
+
 def roomOne():
+    """
+    
+    """
     directions = ["right", "backward"]
     print("\nYou're walking down the tunnel when \nyou suddenly hear a noise echo through the distant tunnels infront of you, where should you go?")
     userInput = ""
@@ -42,7 +46,33 @@ def roomOne():
         else:
             print("Please enter a valid option.")
 
+
+def roomTwo():
+    """
+    
+    """
+    directions = ["left","right","backward"]
+    print("You hear strange noises. You think you have awoken some ancient spirit. Where would you like to go?")
+    userInput = ""
+    while userInput not in directions:
+        print("Options: left | right | backward")
+        userInput = input()
+        if userInput == "right":
+            print("Multiple zombie-like creatures start emerging form the sides as you enter the long hall. You are killed.")
+            quit()
+        elif userInput == "left":
+            print("Congratulations! You made it out!")
+            quit()
+        elif userInput == "backward":
+            startingRoom()
+        else:
+            print("Please enter a valid option.")
+
+
 def roomThree():
+    """
+    
+    """
     directions = ["right", "backward"]
     print("\nYou see something on the floor, \nIt's an phone, someone must have been here recently! \n...You hear that noise again, but this time it's closer, \nWhere should you go?")
     userInput = ""
@@ -51,22 +81,21 @@ def roomThree():
         print("Options: forward | backward")
         userInput = input()
         if userInput == "forward":
-            print("You made it! You've found an exit.")
+            print("Congratulations! You made it out!")
             quit()
         elif userInput == "backward":
             tunnelMonster()
         else:
             print("Please enter a valid option.")
 
-# def deathRoom():
-
-# def emptyRoom():
-
-# def RoomFour():
 
 def tunnelMonster():
+    """
+    
+    """
     print("\nYou ran straight into whatever made those sounds before and you died!")
     quit()
+
 
 if __name__ == "__main__":
     while True:
