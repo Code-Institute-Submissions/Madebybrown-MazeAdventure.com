@@ -15,11 +15,11 @@ def startingRoom():
         print("Options: left | right | backward | forward")
         userInput = input()
         if userInput == "left":
-            RoomOne()
+            roomOne()
         elif userInput == "right":
             deathRoom()
         elif userInput == "backward":
-            print("You find that this way in blocked by heavy rocks, you have to turn around and take another way.")
+            print("You find that this way is blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "forward":
             RoomTwo()
         else:
@@ -34,7 +34,7 @@ def roomOne():
         print("Options: left | right | backward")
         userInput = input()
         if userInput == "left":
-            print("You find that this way in blocked by heavy rocks, you have to turn around and take another way.")
+            print("\nYou find that this way is blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "right":
             roomThree()
         elif userInput == "backward":
@@ -42,26 +42,40 @@ def roomOne():
         else:
             print("Please enter a valid option.")
 
+def roomThree():
+    directions = ["right", "backward"]
+    print("\nYou see something on the floor, \nIt's an phone, someone must have been here recently! \n...You hear that noise again, but this time it's closer, \nWhere should you go?")
+    userInput = ""
+
+    while userInput not in directions:
+        print("Options: forward | backward")
+        userInput = input()
+        if userInput == "forward":
+            print("You made it! You've found an exit.")
+            quit()
+        elif userInput == "backward":
+            tunnelMonster()
+        else:
+            print("Please enter a valid option.")
+
 # def deathRoom():
 
 # def emptyRoom():
 
-# def RoomTwo():
-
-# def RoomThree():
-
 # def RoomFour():
 
-# def deadEnd():
+def tunnelMonster():
+    print("\nYou ran straight into whatever made those sounds before and you died!")
+    quit()
 
 if __name__ == "__main__":
     while True:
         print("Welcome to Riddles Adventure!")
         print("\nAs an adventurer you've decided to visit the maze of Himoshi.")
-        print("But while inside you lose track of time,\n and you find yourself lost.")
+        print("But while inside you lose track of time,\nAnd you find yourself lost.")
         print("\nYou can choose to walk in multiple directions.")
         print("But beware! \nChallanges will present themselves, Hope you'll find a way out!")
-        print("What's your name?: ")
+        print("\nWhat's your name?: ")
         name = input()
         print("Good luck, " + name + ".")
         startingRoom()
