@@ -7,7 +7,9 @@ def starting_room():
     input is not in directions. (Example - backward)
     """
     directions = ["left", "right", "forward"]
-    print("\nYou find yourself in the middle of a room, there are four paths to chose from, where would you like to go?")
+    print("\nYou find yourself in the middle of a room")
+    print("There are four paths to chose from")
+    print("Where would you like to go?")
     user_input = ""
     
     while user_input not in directions:
@@ -31,14 +33,17 @@ def room_one():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
-    print("\nYou're walking down the tunnel when \nYou suddenly hear a noise echo through the distant tunnels infront of you \nwhere should you go?")
+    print("\nYou're walking down the tunnel when")
+    print("You suddenly hear a noise echo through the distant tunnels")
+    print("Where should you go?")
     user_input = ""
     
     while user_input not in directions:
         print("Options: left | right | backward")
         user_input = input()
         if user_input == "left":
-            print("\nYou find that this way is blocked by heavy rocks \nYou have to turn around and take another way.")
+            print("\nYou find that this way is blocked by heavy rocks")
+            print("You have to turn around and take another way.")
         elif user_input == "right":
             room_three()
         elif user_input == "backward":
@@ -77,14 +82,17 @@ def room_three():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
-    print("\nYou see something on the floor, \nIt's an phone, someone must have been here recently! \n...You hear that noise again, but this time it's closer, \nWhere should you go?")
+    print("\nYou see something on the floor")
+    print("It's an phone, someone must have been here recently!")
+    print("...You hear that noise again, but this time it's closer")
+    print("Where should you go?")
     user_input = ""
 
     while user_input not in directions:
         print("Options: forward | backward")
         user_input = input()
         if user_input == "forward":
-            print("Congratulations! You made it out!")
+            print("\nCongratulations! You made it out!")
             quit()
         elif user_input == "backward":
             print("\nYou ran straight into whatever made those sounds before and you died!")
@@ -142,7 +150,9 @@ if __name__ == "__main__":
         print("\nAs an adventurer you've decided to visit the maze of Himoshi.")
         print("But while inside you lose track of time,\nAnd you find yourself lost.")
         print("\nYou can choose to walk in multiple directions.")
-        print("But beware! \nChallanges will present themselves, Hope you'll find a way out!")
+        print("But beware!")
+        print("Challanges will present themselves")
+        print("Hope you'll find a way out!")
         print("\nWhat's your name?: ")
         name = input()
         print("Good luck, " + name + ".")
