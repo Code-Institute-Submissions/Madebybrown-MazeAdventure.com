@@ -18,14 +18,13 @@ def startingRoom():
         if userInput == "left":
             roomOne()
         elif userInput == "right":
-            print("\nYou walk into a dark hall, and can't see the where to put your feet, you fall into a pit and die.")
-            quit()
+            roomFour()
         elif userInput == "backward":
             print("\nYou find that this way is blocked by heavy rocks, you have to turn around and take another way.")
         elif userInput == "forward":
             roomTwo()
         else:
-            print("Please enter a valid option.")
+            print("\nPlease enter a valid option.")
 
 
 def roomOne():
@@ -47,7 +46,7 @@ def roomOne():
         elif userInput == "backward":
             startingRoom()
         else:
-            print("Please enter a valid option.")
+            print("\nPlease enter a valid option.")
 
 
 def roomTwo():
@@ -71,7 +70,7 @@ def roomTwo():
         elif userInput == "backward":
             startingRoom()
         else:
-            print("Please enter a valid option.")
+            print("\nPlease enter a valid option.")
 
 
 def roomThree():
@@ -93,7 +92,29 @@ def roomThree():
             print("\nYou ran straight into whatever made those sounds before and you died!")
             quit()
         else:
-            print("Please enter a valid option.")
+            print("\nPlease enter a valid option.")
+
+
+def roomFour():
+    """
+    Creates a loop that repeats to print the options if the users 
+    input is not in directions. (Example - left(Hidden weapon))
+    """
+    directions = ["backward", "forward"]
+    global weapon
+    print("\nYou see some old scriptures on the walls to the left, it feel like someone is watching you, where would you go?")
+    userInput = ""
+
+    while userInput not in directions:
+        print("Options: backward | forward")
+        userInput = input()
+        if userInput == "left":
+            print("\nYou find this way is a dead end, but wait.. theres something shining in the dirt... you found a loaded gun")
+            weapon = True
+        elif userInput == "backward":
+            startingRoom()
+        elif userInput == "forward":
+            undeadMonster()
 
 
 if __name__ == "__main__":
