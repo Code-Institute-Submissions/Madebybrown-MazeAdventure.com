@@ -5,6 +5,20 @@
 def startingRoom():
     print("\nYou find yourself in the middle of a room, there are four paths to chose from, where would you like to go?")
 
+def deathRoom():
+
+def emptyRoom():
+
+def riddleRoomOne():
+
+def riddleRoomTwo():
+
+def riddleRoomThree():
+
+def riddleRoomFour():
+
+def deadEnd():
+
 if __name__ == "__main__":
     while True:
         print("Welcome to Riddles Adventure!")
