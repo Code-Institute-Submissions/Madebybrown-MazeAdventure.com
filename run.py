@@ -117,6 +117,27 @@ def roomFour():
             undeadMonster()
 
 
+def undeadMonster():
+    actions = ["fight","flee"]
+    global weapon
+    print("\nA strange zombie-like monster has appeared. You can either run or fight it. What would you like to do?")
+    userInput = ""
+
+    while userInput not in actions:
+        print("Options: flee/fight")
+        userInput = input()
+        if userInput == "fight":
+            if weapon:
+                print("\nYou kill the zombie with the gun you found earlier. After moving forward, you find one of the exits. Congrats!")
+            else:
+                print("\nThe zombie-like creature has killed you!")
+            quit()
+        elif userInput == "flee":
+            roomFour()
+        else:
+            print("\nPlease enter a valid option.")
+
+
 if __name__ == "__main__":
     while True:
         print("Welcome to Riddles Adventure!")
