@@ -118,7 +118,7 @@ def room_four():
     global weapon
     print("\n___________")
     print("You see some old scriptures on the walls to the LEFT..")
-    print("It feels like someone is watching you, where would you like to go go?")
+    print("It feels like someone is watching you, where would you like to go?")
     user_input = ""
 
     while user_input not in directions:
