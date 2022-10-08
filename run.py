@@ -7,25 +7,26 @@ def starting_room():
     input is not in directions. (Example - backward)
     """
     directions = ["left", "right", "forward"]
-    print("\n___________")
-    print("You find yourself in the middle of a room")
-    print("There are four paths to choose from")
-    print("Where would you like to go?")
+    print("\n ___________")
+    print(" You find yourself in the middle of a room")
+    print(" There are four paths to choose from")
+    print(" Where would you like to go?")
     user_input = ""
+
     while user_input not in directions:
-        print("Options: left | right | backward | forward")
+        print(" Options: left | right | backward | forward")
         user_input = input()
         if user_input == "left":
             room_one()
         elif user_input == "right":
             room_four()
         elif user_input == "backward":
-            print("\nYou find that heavy rocks block this way")
-            print("You have to turn around and take another way.")
+            print("\n You find that heavy rocks block this way")
+            print(" You have to turn around and take another way.")
         elif user_input == "forward":
             room_two()
         else:
-            print("\nPlease enter a valid option.")
+            print("\n Please enter a valid option.")
 
 
 def room_one():
@@ -34,23 +35,24 @@ def room_one():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
-    print("\n___________")
-    print("You're walking down the tunnel when")
-    print("You suddenly hear a noise echo through the distant tunnels")
-    print("Where should you go?")
+    print("\n ___________")
+    print(" You're walking down the tunnel when")
+    print(" You suddenly hear a noise echo through the distant tunnels")
+    print(" Where should you go?")
     user_input = ""
+
     while user_input not in directions:
-        print("Options: left | right | backward")
+        print(" Options: left | right | backward")
         user_input = input()
         if user_input == "left":
-            print("\nYou find that heavy rocks block this way")
-            print("You have to turn around and take another way.")
+            print("\n You find that heavy rocks block this way")
+            print(" You have to turn around and take another way.")
         elif user_input == "right":
             room_three()
         elif user_input == "backward":
             starting_room()
         else:
-            print("\nPlease enter a valid option.")
+            print("\n Please enter a valid option.")
 
 
 def room_two():
@@ -59,28 +61,28 @@ def room_two():
     input is not in directions. (Example - forward)
     """
     directions = ["left", "right", "backward"]
-    print("\n___________")
-    print("You hear strange noises")
-    print("You think you have disturbed some ancient spirit")
-    print("Where would you like to go?")
+    print("\n ___________")
+    print(" You hear strange noises")
+    print(" You think you have disturbed some ancient spirit")
+    print(" Where would you like to go?")
     user_input = ""
 
     while user_input not in directions:
-        print("Options: left | right | backward")
+        print(" Options: left | right | backward")
         user_input = input()
         if user_input == "right":
-            print("\nZombie-like creatures start emerging from the side walls")
-            print("As you enter the long hall. You are killed.")
-            print("Rip " + name + "")
+            print("\n Zombie-like creatures start emerging from the walls")
+            print(" As you enter the long hall. You are killed.")
+            print(" Rip " + name + "")
             play_again()
         elif user_input == "left":
-            print("\nSorry " + name + "!")
-            print("Spikes came out of the wall and killed you!")
+            print("\n Sorry " + name + "!")
+            print(" Spikes came out of the wall and killed you!")
             play_again()
         elif user_input == "backward":
             starting_room()
         else:
-            print("\nPlease enter a valid option.")
+            print("\n Please enter a valid option.")
 
 
 def room_three():
@@ -89,32 +91,32 @@ def room_three():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward", "up"]
-    print("\n___________")
-    print("You see something on the floor")
-    print("It's a phone, someone must have been here recently!")
-    print("...You hear that noise again, but this time it's closer")
-    print("Where should you go?")
+    print("\n ___________")
+    print(" You see something on the floor")
+    print(" It's a phone, someone must have been here recently!")
+    print(" ...You hear that noise again, but this time it's closer")
+    print(" Where should you go?")
     user_input = ""
 
     while user_input not in directions:
-        print("Options: forward | backward")
+        print(" Options: forward | backward")
         user_input = input()
         if user_input == "forward":
-            print("\nYou fall into a pit of poisonous snakes")
-            print("Rip " + name + "!")
+            print("\n You fall into a pit of poisonous snakes")
+            print(" Rip " + name + "!")
             play_again()
         elif user_input == "backward":
-            print("\nYou ran straight into whatever made those sounds before!")
-            print("Rip " + name + "!")
+            print("\n Whatever made those sounds before just ran into you!")
+            print(" Rip " + name + "!")
             play_again()
         elif user_input == "up":
-            print("\nThere's a rope hanging down from the roof")
-            print("You try to pull it..")
-            print("By accident, you find a secret passage")
-            print("Congratulations " + name + "! You've made it out!")
+            print("\n There's a rope hanging down from the roof")
+            print(" You try to pull it..")
+            print(" By accident, you find a secret passage")
+            print(" Congratulations " + name + "! You've made it out!")
             play_again()
         else:
-            print("\nPlease enter a valid option.")
+            print("\n Please enter a valid option.")
 
 
 def room_four():
@@ -124,22 +126,22 @@ def room_four():
     """
     directions = ["backward", "forward"]
     global weapon
-    print("\n___________")
-    print("You see some old scriptures on the walls to the LEFT..")
-    print("It feels like someone is watching you, where would you like to go?")
+    print("\n ___________")
+    print(" You see some old scriptures on the walls to the LEFT..")
+    print(" Feels like someone is watching you, where would you like to go?")
     user_input = ""
 
     while user_input not in directions:
-        print("Options: backward | forward")
+        print(" Options: backward | forward")
         user_input = input()
         if user_input == "left":
-            print("\nYou find this way is a dead end, but wait..")
-            print("Something is shining in the dirt...")
-            print("You found a loaded gun")
+            print("\n You find this way is a dead end, but wait..")
+            print(" Something is shining in the dirt...")
+            print(" You found a loaded gun")
             weapon = True
-        elif user_input == "backward":
+        elif user_input == " backward":
             starting_room()
-        elif user_input == "forward":
+        elif user_input == " forward":
             undead_monster()
 
 
@@ -150,28 +152,28 @@ def undead_monster():
     """
     actions = ["fight", "flee"]
     global weapon
-    print("\n___________")
-    print("A strange zombie-like monster has appeared.")
-    print("You can either run or fight it.")
-    print("What would you like to do?")
+    print("\n ___________")
+    print(" A strange zombie-like monster has appeared.")
+    print(" You can either run or fight it.")
+    print(" What would you like to do?")
     user_input = ""
 
     while user_input not in actions:
-        print("Options: flee | fight")
+        print(" Options: flee | fight")
         user_input = input()
         if user_input == "fight":
             if weapon:
-                print("\nYou kill the zombie with the gun you found earlier.")
-                print("\nAfter moving forward, you find one of the exits.")
-                print("Congrats " + name + "!")
+                print("\n You kill the zombie with the gun you found earlier.")
+                print("\n After moving forward, you find one of the exits.")
+                print(" Congrats " + name + "!")
                 play_again()
             else:
-                print("\nThe zombie-like creature has killed you!")
+                print("\n The zombie-like creature has killed you!")
                 play_again()
         elif user_input == "flee":
             room_four()
         else:
-            print("\nPlease enter a valid option.")
+            print("\n Please enter a valid option.")
 
 
 def play_again():
@@ -179,32 +181,32 @@ def play_again():
     Gives the user the ability to restart the game if they win or die.
     """
     options = ["y"]
-    print("\nRestart the adventure?")
+    print("\n Restart the adventure?")
     user_input = ""
 
     while user_input not in options:
-        print("Options: y or n")
+        print(" Options: y or n")
         user_input = input()
         if user_input == "y":
             starting_room()
         elif user_input == "n":
             quit()
         else:
-            print("\nPlease enter a valid option.")
+            print("\n Please enter a valid option.")
 
 
 if __name__ == "__main__":
     while True:
-        print("____________________________")
-        print("\nWelcome to Maze Adventure!")
-        print("\nAs an adventurer you've decided to visit the maze of Himo.")
-        print("But while inside you lose track of time")
-        print("And you find yourself lost.")
-        print("\nYou can choose to walk in multiple directions.")
-        print("But beware!")
-        print("Challenges will present themselves")
-        print("Hope you'll find a way out!")
-        print("\nWhat's your name?: ")
+        print(" ____________________________")
+        print("\n Welcome to Maze Adventure!")
+        print("\n As an adventurer you've decided to visit the maze of Himo.")
+        print(" But while inside you lose track of time")
+        print(" And you find yourself lost.")
+        print("\n You can choose to walk in multiple directions.")
+        print(" But beware!")
+        print(" Challenges will present themselves")
+        print(" Hope you'll find a way out!")
+        print("\n What's your name?: ")
         name = input()
-        print("Good luck, " + name + ".")
+        print(" Good luck, " + name + ".")
         starting_room()
