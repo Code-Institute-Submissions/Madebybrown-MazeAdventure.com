@@ -3,6 +3,8 @@
 
 [Live Site - Maze Adventure](https://mazeadventure.herokuapp.com/)
 
+[Repository - Maze Adventure](https://github.com/Madebybrown/MazeAdventure.com)
+
 ![amiresponsive](assets/images/amiresponsive.png)
 
 ## How to play
@@ -37,6 +39,7 @@ The player has the ability to choose what actions they want to take in every sce
 I have manually tested the project by:
 - Giving invalid inputs
 - Tested with my local terminal and the Code Institute terminal
+- Letting other people play the game with the intention to "brake" it
 
 ## Bugs
 ### Solved bugs
@@ -72,8 +75,12 @@ The project was deployd using Heroku.
 ![repository](assets/images/repository.png)
     - Press connect.
 ![connect](assets/images/connect.png)
-    - Scroll down until you find "Enable Automatic Deploys" and "Deploy Branch".
-![connect](assets/images/connect.png)
+    - Scroll down until you find "Enable Automatic Deploys" and "Deploy Branch", press them and wait while your app is building.
+![deploy](assets/images/deploy.png)
+    - Building app
+![loading](assets/images/loading.png)
+    - App build is finished
+![finished](assets/images/finished.png)
 
 ## Credits
 - Deployment Terminal - Code Institute
