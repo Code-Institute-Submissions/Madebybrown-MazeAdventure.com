@@ -8,7 +8,7 @@ def starting_room():
     """
     directions = ["left", "right", "forward"]
     print("\n ___________")
-    print(" You find yourself in the middle of a room")
+    print("\n You find yourself in the middle of a room")
     print(" There are four paths to choose from")
     print(" Where would you like to go?")
     user_input = ""
@@ -36,7 +36,7 @@ def room_one():
     """
     directions = ["right", "backward"]
     print("\n ___________")
-    print(" You're walking down the tunnel when")
+    print("\n You're walking down the tunnel when")
     print(" You suddenly hear a noise echo through the distant tunnels")
     print(" Where should you go?")
     user_input = ""
@@ -62,7 +62,7 @@ def room_two():
     """
     directions = ["left", "right", "backward"]
     print("\n ___________")
-    print(" You hear strange noises")
+    print("\n You hear strange noises")
     print(" You think you have disturbed some ancient spirit")
     print(" Where would you like to go?")
     user_input = ""
@@ -92,7 +92,7 @@ def room_three():
     """
     directions = ["right", "backward", "up"]
     print("\n ___________")
-    print(" You see something on the floor")
+    print("\n You see something on the floor")
     print(" It's a phone, someone must have been here recently!")
     print(" ...You hear that noise again, but this time it's closer")
     print(" Where should you go?")
@@ -127,7 +127,7 @@ def room_four():
     directions = ["backward", "forward"]
     global weapon
     print("\n ___________")
-    print(" You see some old scriptures on the walls to the LEFT..")
+    print("\n You see some old scriptures on the walls to the LEFT..")
     print(" Feels like someone is watching you, where would you like to go?")
     user_input = ""
 
@@ -153,7 +153,7 @@ def undead_monster():
     actions = ["fight", "flee"]
     global weapon
     print("\n ___________")
-    print(" A strange zombie-like monster has appeared.")
+    print("\n A strange zombie-like monster has appeared.")
     print(" You can either run or fight it.")
     print(" What would you like to do?")
     user_input = ""
@@ -201,11 +201,13 @@ if __name__ == "__main__":
         print("\n Welcome to Maze Adventure!")
         print("\n As an adventurer you've decided to visit the maze of Himo.")
         print(" But while inside you lose track of time")
-        print(" And you find yourself lost.")
-        print("\n You can choose to walk in multiple directions.")
-        print(" But beware!")
-        print(" Challenges will present themselves")
-        print(" Hope you'll find a way out!")
+        print(" And you find yourself lost inside of the maze.")
+        print("\n You have to find a way out!")
+        print(" But beware! Challenges will present themselves")
+        print("\n Be on the lookout for hints")
+        print(" And don't forget to look up once in a while")
+        print(" You may find a way out!")
+        print("\n ___________")
         print("\n What's your name?: ")
         name = input()
         print(" Good luck, " + name + ".")
