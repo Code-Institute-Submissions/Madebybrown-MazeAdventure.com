@@ -35,6 +35,7 @@ Keep your eyes open, you may find a hidden object LEFT behind if you go where yo
 - Expanding the storyline
 - Placing more weapons and monsters around the game
 - Using mini-games to escape situations
+- Adding rpg features
 
 ## Testing
 I have manually tested the project by:
