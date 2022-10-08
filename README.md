@@ -42,8 +42,12 @@ I have manually tested the project by:
 ### Solved bugs
 - In the beginning when I wrote the code and ran the progrem, the terminal got spammed with print messages, I relized I missed using a "Else statement" in the "While loop".
 
-- reamining bugs
+### Reamining bugs
+- No known bugs!
 
 Validator
+
 Deployment
-Credits
+
+## Credits
+- Deployment Terminal - Code Institute
