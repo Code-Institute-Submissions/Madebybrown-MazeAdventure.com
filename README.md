@@ -32,8 +32,8 @@ The player can choose what actions they want to take in every scene, they have t
 
 ### Future Features
 - Expanding the storyline
-- Placing more weapons around the game
-- Using riddles to escape rooms
+- Placing more weapons and monsters around the game
+- Using mini games to escape situations
 
 ## Testing
 I have manually tested the project by:
@@ -48,7 +48,12 @@ I have manually tested the project by:
 ### Remaining bugs
 - No known bugs!
 
-Validator
+## Validator
+I used a free service called [Extendsclass.Com](https://extendsclass.com/python-tester.html) to validate my code without any known issues.
+
+I also used [Pythonchecker.com](https://www.pythonchecker.com/) to validate my code.
+
+I also used [Infoheap.com](https://infoheap.com/python-lint-online/) to validate my code.
 
 ## Deployment
 The project was deployed using Heroku.

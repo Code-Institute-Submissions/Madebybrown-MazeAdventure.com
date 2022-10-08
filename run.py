@@ -143,7 +143,7 @@ def undead_monster():
     user_input = ""
 
     while user_input not in actions:
-        print("Options: flee/fight")
+        print("Options: flee | fight")
         user_input = input()
         if user_input == "fight":
             if weapon:
