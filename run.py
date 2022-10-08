@@ -69,20 +69,10 @@ def room_two():
             print("\nZombie-like creatures start emerging from the side walls")
             print("As you enter the long hall. You are killed.")
             print("Rip " + name + "")
-            print("Play Again, Y or N?")
-            user_input = input()
-            if user_input == "y":
-                starting_room()
-            else:
-                quit()
+            play_again()
         elif user_input == "left":
             print("\nCongratulations " + name + "! You made it out!")
-            print("Play Again, Y or N?")
-            user_input = input()
-            if user_input == "y":
-                starting_room()
-            else:
-                quit()
+            play_again()
         elif user_input == "backward":
             starting_room()
         else:
@@ -106,21 +96,11 @@ def room_three():
         user_input = input()
         if user_input == "forward":
             print("\nCongratulations " + name + "! You made it out!")
-            print("Play Again, Y or N?")
-            user_input = input()
-            if user_input == "y":
-                starting_room()
-            else:
-                quit()
+            play_again()
         elif user_input == "backward":
             print("\nYou ran straight into whatever made those sounds before!")
             print("Rip " + name + "!")
-            print("Play Again, Y or N?")
-            user_input = input()
-            if user_input == "y":
-                starting_room()
-            else:
-                quit()
+            play_again()
         else:
             print("\nPlease enter a valid option.")
 
@@ -151,6 +131,10 @@ def room_four():
 
 
 def undead_monster():
+    """
+    Gives the user the ability to kill the monster with a weapon
+    If they've found the hidden passage in the previous room.
+    """
     actions = ["fight", "flee"]
     global weapon
     print("\nA strange zombie-like monster has appeared.")
@@ -166,29 +150,39 @@ def undead_monster():
                 print("\nYou kill the zombie with the gun you found earlier.")
                 print("\nAfter moving forward, you find one of the exits.")
                 print("Congrats " + name + "!")
-                print("Play Again, Y or N?")
-                user_input = input()
-                if user_input == "y":
-                    starting_room()
-                else:
-                    quit()
+                play_again()
             else:
                 print("\nThe zombie-like creature has killed you!")
-                print("Play Again, Y or N?")
-                user_input = input()
-                if user_input == "y":
-                    starting_room()
-                else:
-                    quit()
+                play_again()
         elif user_input == "flee":
             room_four()
         else:
             print("\nPlease enter a valid option.")
 
 
+def play_again():
+    """
+    Gives the user an ability to restart the game if they win or die.
+    """
+    options = ["y"]
+    print("Restart the adventure?")
+    user_input = ""
+
+    while user_input not in options:
+        print("Options: y or n")
+        user_input = input()
+        if user_input == "y":
+            __name__
+        elif user_input == "n":
+            quit()
+        else:
+            print("\nPlease enter a valid option.")
+
+
 if __name__ == "__main__":
     while True:
-        print("Welcome to Maze Adventure!")
+        print("____________________________")
+        print("\nWelcome to Maze Adventure!")
         print("\nAs an adventurer you've decided to visit the maze of Himo.")
         print("But while inside you lose track of time")
         print("And you find yourself lost.")
