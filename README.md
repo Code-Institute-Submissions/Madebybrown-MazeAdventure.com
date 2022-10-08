@@ -8,7 +8,8 @@
 ![amiresponsive](assets/images/amiresponsive.png)
 
 ## How to play
-The player can choose what actions they want to take in every scene, they have the options to move in different directions and to flee or fight. don't forget to take a look around, you may find a hidden weapon if you go where you shouldn't.
+The player can choose what actions they want to take in every scene, they have the options to move in different directions and to flee or fight.
+Keep your eyes open, you may find a hidden object LEFT behind if you go where you shouldn't.
 
 ## Features
 ### Existing Features
@@ -33,7 +34,7 @@ The player can choose what actions they want to take in every scene, they have t
 ### Future Features
 - Expanding the storyline
 - Placing more weapons and monsters around the game
-- Using mini games to escape situations
+- Using mini-games to escape situations
 
 ## Testing
 I have manually tested the project by:
