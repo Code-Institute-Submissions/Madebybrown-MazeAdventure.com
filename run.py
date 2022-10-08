@@ -110,8 +110,8 @@ def room_three():
         elif user_input == "up":
             print("\nThere's a rope hanging down from the roof")
             print("You try to pull it..")
-            print("By accident you find a secret passage")
-            print("Congratulationz " + name + "! You've made it out!")
+            print("By accident, you find a secret passage")
+            print("Congratulations " + name + "! You've made it out!")
             play_again()
         else:
             print("\nPlease enter a valid option.")
@@ -176,7 +176,7 @@ def undead_monster():
 
 def play_again():
     """
-    Gives the user an ability to restart the game if they win or die.
+    Gives the user the ability to restart the game if they win or die.
     """
     options = ["y"]
     print("\nRestart the adventure?")
