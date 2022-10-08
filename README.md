@@ -60,8 +60,20 @@ The project was deployd using Heroku.
 ![settings](assets/images/settings.png)
     - Here you scroll down until you see the button with "Reveal Config Vars" on it, click it!
 ![configvars](assets/images/configvars.png)
-    - Click on "Create new app", this will take you to a new page.
+    - Write PORT and 8000 and then press "Add". 
 ![portconfig](assets/images/portconfig.png)
+    - Scroll down to Buildpacks, and click it.
+![buildpacks](assets/images/buildpacks.png)
+    - Click python to check it and then save changes, click add buildpack again.
+![pythonpack](assets/images/pythonpack.png)
+    - Now scroll up to the top of the page and press the "Deploy" tab and then press github.
+![deploygithub](assets/images/deploygithub.png)
+    - Search for the repository you want to deploy.
+![repository](assets/images/repository.png)
+    - Press connect.
+![connect](assets/images/connect.png)
+    - Scroll down until you find "Enable Automatic Deploys" and "Deploy Branch".
+![connect](assets/images/connect.png)
 
 ## Credits
 - Deployment Terminal - Code Institute
