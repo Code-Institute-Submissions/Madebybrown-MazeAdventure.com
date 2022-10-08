@@ -74,7 +74,8 @@ def room_two():
             print("Rip " + name + "")
             play_again()
         elif user_input == "left":
-            print("\nCongratulations " + name + "! You made it out!")
+            print("\nSorry " + name + "!")
+            print("Spikes came out of the wall and killed you!")
             play_again()
         elif user_input == "backward":
             starting_room()
@@ -99,7 +100,8 @@ def room_three():
         print("Options: forward | backward")
         user_input = input()
         if user_input == "forward":
-            print("\nCongratulations " + name + "! You made it out!")
+            print("\nYou fall into a pit of poisonous snakes")
+            print("Rip " + name + "!")
             play_again()
         elif user_input == "backward":
             print("\nYou ran straight into whatever made those sounds before!")
