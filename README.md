@@ -47,7 +47,21 @@ I have manually tested the project by:
 
 Validator
 
-Deployment
+## Deployment
+The project was deployd using Heroku.
+ - Steps for deployment:
+    - First, when on the Heroku dashboard, click new up to your right hand side, this will toggle a drop down.
+![dashboardnew](assets/images/dashboardnew.png)
+    - Click on "Create new app", this will take you to a new page.
+![createnewapp](assets/images/createnewapp.png)
+    - Here you choose your app name, your region and then you click "Create app" down to the left hand side, this will take you to a new page.
+![namecountry](assets/images/namecountry.png)
+    - On this page you first click on the settings tab.
+![settings](assets/images/settings.png)
+    - Here you scroll down until you see the button with "Reveal Config Vars" on it, click it!
+![configvars](assets/images/configvars.png)
+    - Click on "Create new app", this will take you to a new page.
+![portconfig](assets/images/portconfig.png)
 
 ## Credits
 - Deployment Terminal - Code Institute
