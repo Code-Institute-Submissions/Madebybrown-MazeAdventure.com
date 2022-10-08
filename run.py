@@ -88,7 +88,7 @@ def room_three():
     Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - forward)
     """
-    directions = ["right", "backward"]
+    directions = ["right", "backward", "up"]
     print("\n___________")
     print("You see something on the floor")
     print("It's a phone, someone must have been here recently!")
@@ -106,6 +106,12 @@ def room_three():
         elif user_input == "backward":
             print("\nYou ran straight into whatever made those sounds before!")
             print("Rip " + name + "!")
+            play_again()
+        elif user_input == "up":
+            print("\nThere's a rope hanging down from the roof")
+            print("You try to pull it..")
+            print("By accident you find a secret passage")
+            print("Congratulationz " + name + "! You've made it out!")
             play_again()
         else:
             print("\nPlease enter a valid option.")
