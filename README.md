@@ -5,7 +5,9 @@
 
 ![amiresponsive](assets/images/amiresponsive.png)
 
-How to play
+## How to play
+The player has the ability to choose what actions they want to take in every scene, they have the options to move in different directions and to flee or fight. don't forget to take a look around, you may find a hidden weapon if you go where you shouldnt.
+
 Features
 Testing
 Bugs
