@@ -8,7 +8,30 @@
 ## How to play
 The player has the ability to choose what actions they want to take in every scene, they have the options to move in different directions and to flee or fight. don't forget to take a look around, you may find a hidden weapon if you go where you shouldnt.
 
-Features
+## Features
+### Existing Features
+    - Welcome Message!
+        - Welcomes the player and sets the scenery of the story.
+        - Asks for the players name.
+![welcome](assets/images/featureone.png)
+
+    - Options!
+        - Presents the player with up to four options.
+![options](assets/images/featuretwo.png)
+
+    - Restart Game!
+        - Promts the player to restart the game and play again if the win or die.
+![restart](assets/images/featurethree.png)
+
+    - Invalid Option!
+        - Tells the player that the option they've chosen was invalid.
+![invalid](assets/images/featurefour.png)
+
+### Future Features
+    - Expanding the storyline
+    - Placing more weapons around the game
+    - Using riddles to escape rooms
+
 Testing
 Bugs
     - solved bugs
