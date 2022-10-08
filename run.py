@@ -178,7 +178,7 @@ def play_again():
         print("Options: y or n")
         user_input = input()
         if user_input == "y":
-            __name__
+            starting_room()
         elif user_input == "n":
             quit()
         else:
