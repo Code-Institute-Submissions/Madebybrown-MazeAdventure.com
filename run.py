@@ -7,7 +7,8 @@ def starting_room():
     input is not in directions. (Example - backward)
     """
     directions = ["left", "right", "forward"]
-    print("\nYou find yourself in the middle of a room")
+    print("\n___________")
+    print("You find yourself in the middle of a room")
     print("There are four paths to choose from")
     print("Where would you like to go?")
     user_input = ""
@@ -33,7 +34,8 @@ def room_one():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
-    print("\nYou're walking down the tunnel when")
+    print("\n___________")
+    print("You're walking down the tunnel when")
     print("You suddenly hear a noise echo through the distant tunnels")
     print("Where should you go?")
     user_input = ""
@@ -57,7 +59,8 @@ def room_two():
     input is not in directions. (Example - forward)
     """
     directions = ["left", "right", "backward"]
-    print("\nYou hear strange noises")
+    print("\n___________")
+    print("You hear strange noises")
     print("You think you have disturbed some ancient spirit")
     print("Where would you like to go?")
     user_input = ""
@@ -85,7 +88,8 @@ def room_three():
     input is not in directions. (Example - forward)
     """
     directions = ["right", "backward"]
-    print("\nYou see something on the floor")
+    print("\n___________")
+    print("You see something on the floor")
     print("It's a phone, someone must have been here recently!")
     print("...You hear that noise again, but this time it's closer")
     print("Where should you go?")
@@ -112,7 +116,8 @@ def room_four():
     """
     directions = ["backward", "forward"]
     global weapon
-    print("\nYou see some old scriptures on the walls to the Left..")
+    print("\n___________")
+    print("You see some old scriptures on the walls to the LEFT..")
     print("It feels like someone is watching you, where would you like to go go?")
     user_input = ""
 
@@ -137,7 +142,8 @@ def undead_monster():
     """
     actions = ["fight", "flee"]
     global weapon
-    print("\nA strange zombie-like monster has appeared.")
+    print("\n___________")
+    print("A strange zombie-like monster has appeared.")
     print("You can either run or fight it.")
     print("What would you like to do?")
     user_input = ""
