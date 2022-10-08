@@ -165,7 +165,7 @@ def play_again():
     Gives the user an ability to restart the game if they win or die.
     """
     options = ["y"]
-    print("Restart the adventure?")
+    print("\nRestart the adventure?")
     user_input = ""
 
     while user_input not in options:
