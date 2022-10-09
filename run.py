@@ -5,8 +5,9 @@ weapon = False
 
 def starting_room():
     """
-    Creates a loop that repeats to print the options if the users'
-    input is not in directions. (Example - backward)
+    Creates a loop that repeats to print the options
+    and asks for valid input if the users' input is not in directions.
+    (Example - backward)
     """
     directions = ["left", "right", "forward", "backward"]
     print("\n ___________")
@@ -71,8 +72,9 @@ def riddle_room():
 
 def room_one():
     """
-    Creates a loop that repeats to print the options if the users'
-    input is not in directions. (Example - forward)
+    Creates a loop that repeats to print the options
+    and asks for valid input if the users' input is not in directions.
+    (Example - forward)
     """
     directions = ["right", "backward"]
     print("\n ___________")
@@ -97,8 +99,9 @@ def room_one():
 
 def room_two():
     """
-    Creates a loop that repeats to print the options if the users'
-    input is not in directions. (Example - forward)
+    Creates a loop that repeats to print the options
+    and asks for valid input if the users' input is not in directions.
+    (Example - forward)
     """
     directions = ["left", "right", "backward"]
     print("\n ___________")
@@ -127,8 +130,9 @@ def room_two():
 
 def room_three():
     """
-    Creates a loop that repeats to print the options if the users'
-    input is not in directions. (Example - forward)
+    Creates a loop that repeats to print the options
+    and asks for valid input if the users' input is not in directions.
+    (Example - forward)
     """
     directions = ["right", "backward", "up"]
     print("\n ___________")
@@ -161,8 +165,9 @@ def room_three():
 
 def room_four():
     """
-    Creates a loop that repeats to print the options if the users'
-    input is not in directions. (Example - left(Hidden weapon))
+    Creates a loop that repeats to print the options
+    and asks for valid input if the users' input is not in directions.
+    (Example - left(Hidden weapon))
     """
     directions = ["backward", "forward"]
     global weapon
@@ -187,6 +192,8 @@ def room_four():
 
 def undead_monster():
     """
+    Creates a loop that repeats to print the options
+    and asks for valid input if the users' input is not in actions.
     Gives the user the ability to kill the monster with a weapon
     If they've found the hidden passage in the previous room.
     """
