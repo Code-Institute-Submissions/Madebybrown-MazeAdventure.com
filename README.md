@@ -116,5 +116,7 @@ The project was deployed using Heroku.
 
 ## Credits
 - Deployment Terminal - Code Institute
+- [Numbers Guessing Game one](https://geekflare.com/python-number-guessing-game/)
+- [Numbers Guessing Game two](https://codingnomads.co/blog/python-project-for-beginners-guess-the-number-game/)
 
 [BACK TO THE TOP](#maze-adventure)
