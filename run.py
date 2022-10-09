@@ -30,6 +30,17 @@ def starting_room():
             print("\n Please enter a valid option.")
 
 
+def riddle_room():
+    """
+    Creates a random number between 1 and 10
+
+    """
+    print("\n ___________")
+    print("\n You just walked into a trap")
+    print(" The passage behind you got sealed of by a stone wall")
+    print(" Only way out is to solve the puzzle on the wall")
+
+
 def room_one():
     """
     Creates a loop that repeats to print the options if the users'
