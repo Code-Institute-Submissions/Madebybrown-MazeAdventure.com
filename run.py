@@ -184,9 +184,9 @@ def room_four():
             print(" Something is shining in the dirt...")
             print(" You found a loaded gun")
             weapon = True
-        elif user_input == " backward":
+        elif user_input == "backward":
             starting_room()
-        elif user_input == " forward":
+        elif user_input == "forward":
             undead_monster()
 
 
