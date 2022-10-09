@@ -1,3 +1,5 @@
+import random
+
 weapon = False
 
 
@@ -6,7 +8,7 @@ def starting_room():
     Creates a loop that repeats to print the options if the users'
     input is not in directions. (Example - backward)
     """
-    directions = ["left", "right", "forward"]
+    directions = ["left", "right", "forward", "backward"]
     print("\n ___________")
     print("\n You find yourself in the middle of a room")
     print(" There are four paths to choose from")
@@ -21,8 +23,7 @@ def starting_room():
         elif user_input == "right":
             room_four()
         elif user_input == "backward":
-            print("\n You find that heavy rocks block this way")
-            print(" You have to turn around and take another way.")
+            riddle_room()
         elif user_input == "forward":
             room_two()
         else:
@@ -190,7 +191,7 @@ def play_again():
         if user_input == "y":
             starting_room()
         elif user_input == "n":
-            quit()
+            break
         else:
             print("\n Please enter a valid option.")
 
