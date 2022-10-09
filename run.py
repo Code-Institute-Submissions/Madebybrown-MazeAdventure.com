@@ -32,7 +32,9 @@ def starting_room():
 
 def riddle_room():
     """
-
+    Creates a random number between 1 and 10
+    loops through number_of_guesses and increments by one
+    prints statements depending on users input
     """
     print("\n ___________")
     print("\n You just walked into a trap")
