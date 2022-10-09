@@ -7,6 +7,19 @@
 
 ![amiresponsive](assets/images/amiresponsive.png)
 
+## Table Of Contents
+- [How To Play](#how-to-play)
+- [Features](#features)
+- [Future Features](#future-features)
+- [Wireframe](#wireframe)
+- [Testing](#testing)
+- [Bugs](#bugs)
+    - [Solved Bugs](#solved-bugs)
+    - [Remaining Bugs](#remaining-bugs)
+- [Validator](#validator)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 ## How to play
 The player can choose what actions they want to take in every scene, they have the options to move in different directions and to flee or fight.
 Keep your eyes open, you may find a hidden object LEFT behind if you go where you shouldn't.
@@ -103,3 +116,5 @@ The project was deployed using Heroku.
 
 ## Credits
 - Deployment Terminal - Code Institute
+
+[BACK TO THE TOP](#maze-adventure)
