@@ -45,6 +45,10 @@ Keep your eyes open, you may find a hidden object LEFT behind if you go where yo
 - Using mini-games to escape situations
 - Adding RPG features
 
+## Wireframe
+- The basic idea of maze adventure, with hidden rooms and weapons.
+![wireframe](assets/images/wireframe.png)
+
 ## Testing
 I have manually tested the project by:
 - Giving invalid inputs

@@ -24,14 +24,14 @@ def starting_room():
         elif user_input == "right":
             room_four()
         elif user_input == "backward":
-            riddle_room()
+            numbers_room()
         elif user_input == "forward":
             room_two()
         else:
             print("\n Please enter a valid option.")
 
 
-def riddle_room():
+def numbers_room():
     """
     Creates a random number between 1 and 10
     loops through number_of_guesses and increments by one
