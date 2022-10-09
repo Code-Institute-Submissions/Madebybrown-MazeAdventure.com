@@ -53,6 +53,18 @@ def riddle_room():
         if guess == number:
             break
 
+    if guess == number:
+        print('\n You solved the puzzle!')
+        print(' A small passage opens up in the wall')
+        print(' You can finally see light again, you made it out!')
+        print(' You got it right in ' + str(number_of_guesses) + ' tries!')
+        play_again()
+    else:
+        print("\n ___________")
+        print('\n Unfortunately the room filled with water so you died')
+        print(' You did not guess the right number')
+        print(' The number was ' + str(number))
+        play_again()
 
 def room_one():
     """
