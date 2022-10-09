@@ -44,7 +44,8 @@ def riddle_room():
 
     number = random.randint(1, 10)
     number_of_guesses = 0
-    print('\n Guess a number between 1 and 10: ')
+    print('\n You have 5 chances to get it right')
+    print(' Choose a number between 1 and 10: ')
 
     while number_of_guesses < 5:
         guess = int(input())
@@ -57,9 +58,11 @@ def riddle_room():
             break
 
     if guess == number:
+        print("\n ___________")
+        print('\n A small passage opens up in the wall')
+        print(' You can finally see the light again, you made it out!')
         print('\n You solved the puzzle!')
-        print(' A small passage opens up in the wall')
-        print(' You can finally see light again, you made it out!')
+        print(' The number was ' + str(number))
         print(' You got it right in ' + str(number_of_guesses) + ' tries!')
         play_again()
     else:
