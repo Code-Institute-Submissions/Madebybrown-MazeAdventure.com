@@ -32,13 +32,16 @@ def starting_room():
 
 def riddle_room():
     """
-    Creates a random number between 1 and 10
 
     """
     print("\n ___________")
     print("\n You just walked into a trap")
     print(" The passage behind you got sealed of by a stone wall")
     print(" Only way out is to solve the puzzle on the wall")
+
+    number = random.randint(1, 10)
+    number_of_guesses = 0
+    print('\n Guess a number between 1 and 10: ')
 
 
 def room_one():
