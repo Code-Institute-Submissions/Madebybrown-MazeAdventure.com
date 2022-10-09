@@ -35,11 +35,11 @@ def riddle_room():
     """
     Creates a random number between 1 and 10
     loops through number_of_guesses and increments by one
-    prints statements depending on users input
+    prints statements depending on users' input
     """
     print("\n ___________")
     print("\n You just walked into a trap")
-    print(" The passage behind you got sealed of by a stone wall")
+    print(" The passage behind you got sealed off by a stone wall")
     print(" Only way out is to solve the puzzle on the wall")
 
     number = random.randint(1, 10)

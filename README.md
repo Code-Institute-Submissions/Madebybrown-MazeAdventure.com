@@ -31,7 +31,7 @@ Keep your eyes open, you may find a hidden object LEFT behind if you go where yo
 - Tells the player that the option they've chosen was invalid.
 ![invalid](assets/images/featurefour.png)
 
-**Num Game!**
+**Numbers Game!**
 - A game of guessing the right random number between 1 and 10.
 ![numgame](assets/images/numgame.png)
 - When your guess is too low
