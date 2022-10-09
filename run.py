@@ -50,9 +50,9 @@ def riddle_room():
         guess = int(input())
         number_of_guesses += 1
         if guess < number:
-            print(' Your guess is too low: ')
+            print(' Your guess is too low, try again: ')
         if guess > number:
-            print(' Your guess is too high: ')
+            print(' Your guess is too high, try again: ')
         if guess == number:
             break
 

@@ -31,11 +31,19 @@ Keep your eyes open, you may find a hidden object LEFT behind if you go where yo
 - Tells the player that the option they've chosen was invalid.
 ![invalid](assets/images/featurefour.png)
 
+**Num Game!**
+- A game of guessing the right random number between 1 and 10.
+![numgame](assets/images/numgame.png)
+- When your guess is too low
+![numtolow](assets/images/numtolow.png)
+- When your guess is too high
+![numtohigh](assets/images/numtohigh.png)
+
 ### Future Features
 - Expanding the storyline
 - Placing more weapons and monsters around the game
 - Using mini-games to escape situations
-- Adding rpg features
+- Adding RPG features
 
 ## Testing
 I have manually tested the project by:
