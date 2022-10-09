@@ -43,6 +43,16 @@ def riddle_room():
     number_of_guesses = 0
     print('\n Guess a number between 1 and 10: ')
 
+    while number_of_guesses < 3:
+        guess = int(input())
+        number_of_guesses += 1
+        if guess < number:
+            print(' Your guess is too low: ')
+        if guess > number:
+            print(' Your guess is too high: ')
+        if guess == number:
+            break
+
 
 def room_one():
     """
