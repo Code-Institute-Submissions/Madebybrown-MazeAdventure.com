@@ -43,7 +43,7 @@ def riddle_room():
     number_of_guesses = 0
     print('\n Guess a number between 1 and 10: ')
 
-    while number_of_guesses < 3:
+    while number_of_guesses < 5:
         guess = int(input())
         number_of_guesses += 1
         if guess < number:
@@ -65,6 +65,7 @@ def riddle_room():
         print(' You did not guess the right number')
         print(' The number was ' + str(number))
         play_again()
+
 
 def room_one():
     """
